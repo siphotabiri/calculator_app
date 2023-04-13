@@ -1,4 +1,7 @@
 from art import logo
+import math
+
+#Add more operations: Exponentiation, modulo etc
 
 def add(n1, n2):
     return n1 + n2
@@ -12,11 +15,23 @@ def multiply(n1, n2):
 def divide(n1, n2):
     return n1 / n2
 
+def exponentiation(n1, n2):
+    return n1**n2
+
+def modulation(n1, n2):
+    return n1%n2
+
+def floor_division(n1,n2):
+    return n1//n2
+
 operations = {
     "+": add,
     "-": subtract,
     "*": multiply,
-    "/": divide
+    "/": divide,
+    "**": exponentiation,
+    "%": modulation,
+    "//":floor_division,
 }
 
 def calculator():
